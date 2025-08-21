@@ -1,10 +1,18 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 import { theme } from "@/theme";
+import { useUserStore } from "@/store/store";
+import { useRouter } from "expo-router";
 
 export default function OnboardingScreen() {
+  const router = useRouter();
+  const toggleHasOnBoarded = useUserStore((state) => state.toggleHasOnboarded);
+  const handlePress = () => {
+    toggleHasOnBoarded();
+    router.replace("/")
+  };
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Onboarding</Text>
+      <Button title="Let me in!" onPress={handlePress} />
     </View>
   );
 }

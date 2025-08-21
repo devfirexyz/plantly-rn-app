@@ -1,10 +1,13 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 import { theme } from "@/theme";
+import { useUserStore } from "@/store/store";
 
 export default function ProfileScreen() {
+  const toggleHasOnBoarded =  useUserStore((state) => state.toggleHasOnboarded)
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile</Text>
+     <Button title="Back to onboarding" onPress={toggleHasOnBoarded} />
     </View>
   );
 }
