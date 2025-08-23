@@ -9,19 +9,24 @@
     "newArchEnabled": true,
     "scheme": "plantly",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.devfirexyz.plantly",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.devfirexyz.plantly"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -29,6 +34,13 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bc38aca3-1df0-4e8e-8043-b0f2c4c102ef"
+      }
+    },
+    "owner": "piyush_dragon_raj"
   }
 }

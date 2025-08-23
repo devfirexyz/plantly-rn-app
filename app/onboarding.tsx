@@ -5,6 +5,7 @@ import { useRouter } from "expo-router";
 import { PlantlyButton } from "@/components/PlantlyButton";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
+import { PlantlyImage } from "@/components/PlantyImage";
 
 export default function OnboardingScreen() {
   const router = useRouter();
@@ -20,8 +21,15 @@ export default function OnboardingScreen() {
       end={{ x: 1, y: 1 }}
       colors={[theme.colorGreen, theme.colorAppleGreen, theme.colorLimeGreen]}
     >
-      <StatusBar style="light" /> 
+      <StatusBar style="light" />
       {/* we can have seperate status bar for each screen as we want */}
+      <View style={{ paddingHorizontal: 18 , gap: 12}}>
+        <Text style={styles.heading}>Plantly</Text>
+        <Text style={styles.tagline}>
+          Keep your plants healthy and hydrated
+        </Text>
+      </View>
+      <PlantlyImage />
       <PlantlyButton title="Let me in!" onPress={handlePress} />
     </LinearGradient>
   );
@@ -30,11 +38,23 @@ export default function OnboardingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
   },
   text: {
     fontSize: 24,
+  },
+  heading: {
+    fontSize: 42,
+    color: theme.colorWhite,
+    fontWeight: "bold",
+    marginBottom: 12,
+    textAlign: "center",
+  },
+  tagline: {
+    fontSize: 24,
+    color: theme.colorWhite,
+    textAlign: "center",
   },
 });
