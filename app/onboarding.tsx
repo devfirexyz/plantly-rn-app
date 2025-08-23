@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Button, Platform } from "react-native";
 import { theme } from "@/theme";
 import { useUserStore } from "@/store/store";
 import { useRouter } from "expo-router";
@@ -23,7 +23,7 @@ export default function OnboardingScreen() {
     >
       <StatusBar style="light" />
       {/* we can have seperate status bar for each screen as we want */}
-      <View style={{ paddingHorizontal: 18 , gap: 12}}>
+      <View style={{ paddingHorizontal: 18, gap: 12 }}>
         <Text style={styles.heading}>Plantly</Text>
         <Text style={styles.tagline}>
           Keep your plants healthy and hydrated
@@ -42,9 +42,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: theme.colorWhite,
   },
-  text: {
-    fontSize: 24,
-  },
   heading: {
     fontSize: 42,
     color: theme.colorWhite,
@@ -56,5 +53,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: theme.colorWhite,
     textAlign: "center",
+    fontFamily: Platform.select({
+      ios: "Caveat-Regular",
+      android: "Caveat_400Regular",
+    }),
   },
 });

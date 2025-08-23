@@ -859,6 +859,11 @@
     "@eslint/core" "^0.15.2"
     levn "^0.4.1"
 
+"@expo-google-fonts/caveat@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/caveat/-/caveat-0.4.1.tgz#b5d0ba100beca9e0fe69c6326d7e45d6529ba8ad"
+  integrity sha512-cGMOqYnhVODsRnBQKNfefD/Lp7Sv+mm7YjqKCtvV7wk6gbnGl2GpXatxN7dkLjUrjC3A+cRrumFLgTjlETLtBQ==
+
 "@expo/cli@0.24.20":
   version "0.24.20"
   resolved "https://registry.npmjs.org/@expo/cli/-/cli-0.24.20.tgz"
@@ -1016,7 +1021,7 @@
     resolve-from "^5.0.0"
     semver "^7.6.0"
 
-"@expo/image-utils@^0.7.6":
+"@expo/image-utils@^0.7.6", "@expo/image-utils@~0.7.4":
   version "0.7.6"
   resolved "https://registry.npmjs.org/@expo/image-utils/-/image-utils-0.7.6.tgz"
   integrity sha512-GKnMqC79+mo/1AFrmAcUcGfbsXXTRqOMNS1umebuevl3aaw+ztsYEFEiuNhHZW7PQ3Xs3URNT513ZxKhznDscw==
@@ -3638,6 +3643,15 @@ expo-modules-core@2.5.0:
   dependencies:
     invariant "^2.2.4"
 
+expo-quick-actions@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/expo-quick-actions/-/expo-quick-actions-5.0.0.tgz#6b3c5c21190607f779be1588ebaf119577a3c120"
+  integrity sha512-NSsDhfbal11gXsHkJbvYVw7x0QUCKrEth2kBBKZUv03dX4J7ZPADSV89LyEpOVYXCkrw6LuanlEtKavg/BFaRA==
+  dependencies:
+    "@expo/image-utils" "~0.7.4"
+    schema-utils "^4.2.0"
+    sf-symbols-typescript "^2.1.0"
+
 expo-router@~5.1.4:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-5.1.4.tgz#37d611b35a474531a95638c2b5cc19b10fe13189"
@@ -6114,7 +6128,7 @@ scheduler@0.25.0, scheduler@^0.25.0:
   resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.25.0.tgz"
   integrity sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==
 
-schema-utils@^4.0.1:
+schema-utils@^4.0.1, schema-utils@^4.2.0:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-4.3.2.tgz#0c10878bf4a73fd2b1dfd14b9462b26788c806ae"
   integrity sha512-Gn/JaSk/Mt9gYubxTtSn/QCV4em9mpAPiR1rqy/Ocu19u/G9J5WWdNoUT4SiV6mFC3y6cxyFcFwdzPM3FgxGAQ==
@@ -6237,6 +6251,11 @@ setprototypeof@1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
+
+sf-symbols-typescript@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sf-symbols-typescript/-/sf-symbols-typescript-2.1.0.tgz#50a2d7b36edd6809606f0b0a36322fc1fdd7cfde"
+  integrity sha512-ezT7gu/SHTPIOEEoG6TF+O0m5eewl0ZDAO4AtdBi5HjsrUI6JdCG17+Q8+aKp0heM06wZKApRCn5olNbs0Wb/A==
 
 shallowequal@^1.1.0:
   version "1.1.0"
